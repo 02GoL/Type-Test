@@ -1,0 +1,95 @@
+@keyframes header {
+    from{color:#2D2D2A}
+    to{color:#20FC8F}
+}
+
+@keyframes span {
+    from{color:#2D2D2A}
+    to{color:grey}
+}
+
+h1{
+    text-indent: 16px;
+    animation-name: header;
+    animation-duration: 0.75s;
+    color: #20FC8F;
+}
+
+body{
+    background:#2D2D2A;
+    font-family: 'Exo 2', sans-serif;
+    user-select: none;
+}
+
+span{
+    border-left: 2px solid #2D2D2A;
+    word-spacing: 4px;
+    letter-spacing: -1px;
+    animation-name: span;
+    animation-duration: 0.75s;
+}
+
+input{
+    background: transparent;
+    border: none;
+    outline: none;
+    pointer-events:none;
+    color: transparent;
+}
+
+.textArea{
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    min-height: 560px;
+    padding-left: 13%;
+    padding-right: 13%;
+    color: grey;
+}
+
+.paused{
+    display: flex;
+    border-left: transparent;
+    font-size: 40px;   
+    color: #20FC8F;
+}
+
+#startText{
+    position: absolute;
+    margin: auto;
+    padding-left: 28%;
+    animation-name: header;
+    animation-duration: 0.75s;
+}
+
+#resumeText{
+    position: absolute;
+    margin: auto;
+    color: transparent;
+    padding-left: 26%;
+}
+
+#endText{
+    position: absolute;
+    margin: auto;
+    color: transparent;
+    padding-left: 25%;
+}
+
+#current{
+    border-left: 2px solid #20FC8F;
+}
+
+#correct{
+    color: white;
+}
+
+#incorrect{
+    color: rgb(219, 68, 68);
+}
+
+#incorrectSpace{
+    text-decoration: underline rgb(219, 68, 68);
+    text-underline-offset: -3px;
+}

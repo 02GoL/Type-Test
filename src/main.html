@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" >
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>SimpleType</title>
+        <link rel="icon" type="image/x-icon" href="iconImg.png">
+        <div>
+            <h1>Simply Type</h1>
+        </div>
+    </head>
+    <body>
+        <div class="typeTestArea">
+            <div class="textArea">
+                <div class="paused">
+                    <p id="startText">Click To Start<p>
+                    <p id="resumeText">Click To Resume</p>
+                    <p id="endText">Accuracy: </p>
+                </div>
+                <p id="text" style="filter:blur(4px)"></p>
+            </div>
+            <div class="inputBox">
+                <input type="text" id="input" spellcheck="false" onfocusout="blurText()">
+            </div>    
+        </div>
+        <script src="typingTest.js"></script>
+    </body>
+</html>
